@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Copyright and Info */}
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p className="text-sm text-gray-600">
-              © {new Date().getFullYear()} Shastra Results. All rights reserved.
+              © {new Date().getFullYear()} TCET-Shastra Coding Club. All rights reserved.
             </p>
             <p className="text-xs text-gray-500 mt-1">
               A tool for processing HackerRank contest results
@@ -30,7 +30,7 @@ const Footer = () => {
               Privacy Policy
             </a>
             <span className="text-sm text-gray-600">
-              Made with ❤️ by Your Team
+              Made with ❤️ by Documentation Team 2024-25
             </span>
           </div>
         </div>
