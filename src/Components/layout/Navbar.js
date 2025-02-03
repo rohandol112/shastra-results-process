@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         {/* Center Navigation */}
-        <div className={`md:flex items-center gap-4 ${isOpen ? 'block' : 'hidden'} md:block`}>
+        <div className={`md:flex items-center gap-4 ${isOpen ? 'flex flex-col absolute top-16 left-0 w-full bg-[#0A0A0A] border-b border-orange-600/20' : 'hidden'} md:block`}>
           <Link 
             to="/" 
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-white transition duration-200 ${location.pathname === '/' ? 'bg-gradient-to-r from-blue-600 to-orange-500' : 'bg-transparent text-gray-400 hover:bg-gray-600'}`}
