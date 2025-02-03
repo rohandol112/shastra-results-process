@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileText, Terminal, Database } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const containerVariants = {
@@ -101,25 +102,27 @@ const Home = () => {
             Streamline your workflow with our Jupyter Notebook scripts.
           </motion.p>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            animate={{
-              boxShadow: [
-                "0 0 0 0 rgba(0, 255, 255, 0)",
-                "0 0 30px 5px rgba(0, 255, 255, 0.5)",
-                "0 0 0 0 rgba(0, 255, 255, 0)"
-              ]
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              repeatType: "reverse"
-            }}
-            className="px-8 py-3 bg-gradient-to-r from-cyan-600 to-fuchsia-600 rounded-lg font-medium text-lg border border-cyan-400/50 text-white shadow-neon"
-          >
-            Get Started
-          </motion.button>
+          <Link to="/upload">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              animate={{
+                boxShadow: [
+                  "0 0 0 0 rgba(0, 255, 255, 0)",
+                  "0 0 30px 5px rgba(0, 255, 255, 0.5)",
+                  "0 0 0 0 rgba(0, 255, 255, 0)"
+                ]
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+              className="px-8 py-3 bg-gradient-to-r from-cyan-600 to-fuchsia-600 rounded-lg font-medium text-lg border border-cyan-400/50 text-white shadow-neon"
+            >
+              Get Started
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* Workflow Steps */}
