@@ -1,7 +1,7 @@
 // src/Components/layout/Footer.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Mail, Globe } from 'lucide-react';
+import { Github, Mail, Globe, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -65,6 +65,9 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-gray-800">
           <p className="text-center text-gray-400 text-sm">
             © {new Date().getFullYear()} TCET's Shastra Coding Club. All rights reserved.
+          </p>
+          <p className="text-center text-gray-400 text-sm flex items-center justify-center">
+            Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> by Documentation Team 2024-25
           </p>
         </div>
       </div>
